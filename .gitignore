@@ -49,3 +49,6 @@ pkg
 #*.rbc
 
 spec/tmp
+
+Gemfile*
+*.gem
