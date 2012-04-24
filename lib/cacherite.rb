@@ -33,7 +33,7 @@ class Cacherite
   end
 
   def save(key, content)
-    cache = File.open(File.join(@directory, key), "w")
+    cache = File.open(File.join(@directory, key), "wb")
     cache.write(content)
     cache.close
 
