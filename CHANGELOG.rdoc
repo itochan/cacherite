@@ -1,0 +1,10 @@
+=== 0.2.0 / 2012-04-24
+
+* Features
+  * Cacherite#get_path return cache path.
+  * lifetime is 0 then indefinitely cached.
+
+=== 0.1.0 / 2012-04-24
+
+* Features
+  * basic features(get, save, remove, clean, extend_life)
