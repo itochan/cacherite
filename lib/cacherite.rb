@@ -23,6 +23,15 @@ class Cacherite
     end
   end
 
+  def get_path(key)
+    path = File.join(@directory, key)
+    if File.exist?(path)
+      path
+    else
+      nil
+    end
+  end
+
   def save(key, content)
     cache = File.open(File.join(@directory, key), "w")
     cache.write(content)
