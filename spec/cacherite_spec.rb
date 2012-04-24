@@ -53,4 +53,9 @@ describe Cacherite do
     new = File::Stat.new(File.join(@directory, "key")).mtime
     (new - old).should eq 1
   end
+
+  it "get path" do
+    @cr.save("key", "content")
+    @cr.get_path("key").should eq File.join(@directory, "key")
+  end
 end
