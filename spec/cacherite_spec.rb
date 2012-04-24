@@ -26,7 +26,8 @@ describe Cacherite do
 
   it "missing cache" do
     @cr.save("key", "content")
-    @cr.lifetime = 0
+    @cr.lifetime = 1
+    sleep 1
     @cr.get("key").should be_nil
     @cr.lifetime = 3600
   end

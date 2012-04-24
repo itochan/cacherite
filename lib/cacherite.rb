@@ -11,7 +11,7 @@ class Cacherite
   def get(key)
     begin
       cache = open(File.join(@directory, key)).read
-      if Time.now - File::Stat.new(File.join(@directory, key)).mtime >= @lifetime
+      if Time.now - File::Stat.new(File.join(@directory, key)).mtime >= @lifetime && @lifetime != 0
         self.remove(key)
         nil
       else
