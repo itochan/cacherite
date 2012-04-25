@@ -4,6 +4,10 @@ Lite file caching library.
 
 PHP library PEAR::Cache_Lite like.
 
+== Installation
+
+  gem install cacherite
+
 == Copyright
 
 Copyright (c) 2012 itochan. See LICENSE.txt for
