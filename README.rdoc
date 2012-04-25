@@ -1,6 +1,8 @@
-= cacherite
+= Cacherite
 
 Lite file caching library.
+
+PHP library PEAR::Cache_Lite like.
 
 == Copyright
 
