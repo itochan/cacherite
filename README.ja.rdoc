@@ -1,0 +1,13 @@
+= Cacherite
+
+Cacheriteとは、簡単にファイルをキャッシュすることができる簡易Key-Value Storeです。
+
+== インストール
+
+  gem install cacherite
+
+== Copyright
+
+Copyright (c) 2012 itochan. See LICENSE.txt for
+further details.
+

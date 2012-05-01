@@ -5,3 +5,4 @@ features/**/*.feature
 LICENSE.txt
 CHANGELOG.rdoc
 README.rdoc
+README.ja.rdoc
