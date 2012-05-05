@@ -46,11 +46,11 @@ describe Cacherite do
 
   it "extend life" do
     @cr.save("key", "content")
-    old = File::Stat.new(File.join(@directory, "key")).mtime
+    old = File.mtime(File.join(@directory, "key"))
     @cr.get("key")
     sleep 1
     @cr.extend_life().should_not be_false
-    new = File::Stat.new(File.join(@directory, "key")).mtime
+    new = File.mtime(File.join(@directory, "key"))
     (new - old).should eq 1
   end
 

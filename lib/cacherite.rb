@@ -13,7 +13,7 @@ class Cacherite
   def get(key)
     begin
       cache = open(File.join(@directory, key)).read
-      if Time.now - File::Stat.new(File.join(@directory, key)).mtime >= @lifetime && @lifetime != 0
+      if Time.now - File.mtime(File.join(@directory, key)) >= @lifetime && @lifetime != 0
         self.remove(key)
         nil
       else
@@ -57,6 +57,6 @@ class Cacherite
       raise "key has not been set or is not get"
     end
 
-    File::Stat.new(File.join(@directory, key)).mtime
+    File.mtime(File.join(@directory, key))
   end
 end
