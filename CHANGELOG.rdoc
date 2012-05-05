@@ -1,3 +1,8 @@
+=== 0.4.0 / 2012-05-05
+
+* Features
+  * return Cacherite version info in Cacherite::VERSION
+
 === 0.3.0 / 2012-04-25
 
 * Features
