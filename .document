@@ -2,7 +2,7 @@ lib/**/*.rb
 bin/*
 - 
 features/**/*.feature
-LICENSE.txt
+LICENSE
 CHANGELOG.rdoc
 README.rdoc
 README.ja.rdoc
