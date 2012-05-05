@@ -4,7 +4,31 @@ Cacheriteとは、簡単にファイルをキャッシュすることができ�
 
 == インストール
 
-  gem install cacherite
+あなたのGemfileに追加します:
+
+  gem 'cacherite'
+
+そしてbundlerを実行します:
+
+  $ bundle
+
+もしくは、自分でインストールします:
+
+  $ gem install cacherite
+
+== 使う
+
+メソッドについての情報はこちらにあります。
+
+http://cacherite.ito315.com/
+
+== 開発に参加
+
+1. GitHubリポジトリ(http://github.com/itochan/cacherite)からforkします。
+2. あなたの新しい機能を書くためのブランチを作ります。 (`git checkout -b my-new-feature`)
+3. あなたの変更をコミットします。 (`git commit -am 'Added some feature'`)
+4. ブランチをpushします。 (`git push origin my-new-feature`)
+5. Pull Requestを出します。
 
 == Copyright
 

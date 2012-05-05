@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+require "cacherite/version"
+
 class Cacherite
   attr_accessor :lifetime
 
